@@ -1,0 +1,17 @@
+Questão 1:
+O outro usuário não consegue acessar por conta da regra criada para bloquear.
+
+Questão 2:
+Ao especificar o IP, o boqueio é exclusivo a este.
+
+Questão 3:
+A ação demora por certo tempo, e uma mensagem de faha é recebida, confirmando o bloqueio.
+
+Questão 4:
+A principal diferença é a segurança, pois enquanto o SSH oferece mecanismos de segurança para o usuário contra qualquer 
+um com intenções maliciosas, o Telnet não possui nenhuma medida. Todos os dados transmitidos são em texto, no Telnet, 
+por ter sido desenvolvido para rede interna. Já o SSH é incriptado para dificultar o acesso a informações relevantes.
+
+Questão 5:
+A conexão SSH é bloqueiada instantaneamente, barrando o acesso.
+
