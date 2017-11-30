@@ -1,0 +1,41 @@
+#RAFAEL FERNANDO 441                                                 
+
+#SEGURANÇA EM REDES DE COMPUTADORES (IPTABLES)
+
+sudo iptables -F
+
+sudo iptables -A FORWARD -s 10.17.9.19/21 -j ACCEPT
+sudo iptables -t nat -A POSTROUTING -s 10.17.9.19/21 -o eno1 -j MASQUERADE
+
+#PADRÕES
+sudo iptables -t filter -P INPUT DROP
+sudo iptables -t filter -P FORWARD DROP
+sudo iptables -t filter -P OUTPUT DROP
+
+#HTTPS
+sudo iptables -t filter -A FORWARD -s 10.17.9.19/21 -o eno1 -p tcp --dport 433 -j ACCEPT
+sudo iptables -t filter -A FORWARD -d 10.17.9.19/21 -i eno1 -p tcp --sport 433 -j ACCEPT
+
+#FTP
+sudo iptables -t filter -A FORWARD -s 10.17.9.19/21 -o eno1 -p tcp --dport 20:21 -j ACCEPT
+sudo iptables -t filter -A FORWARD -d 10.17.9.19/21 -i eno1 -p tcp --sport 20:21 -j ACCEPT
+
+#SMTP
+sudo iptables -t filter -A FORWARD -s 10.17.9.19/21 -o eno1 -p tcp --dport 25 -j ACCEPT
+sudo iptables -t filter -A FORWARD -d 10.17.9.19/21 -i eno1 -p tcp --sport 25 -j ACCEPT
+
+#IMAP
+sudo iptables -t filter -A FORWARD -s 10.17.9.19/21 -o eno1 -p tcp --dport 993 -j ACCEPT
+sudo iptables -t filter -A FORWARD -d 10.17.9.19/21 -i eno1 -p tcp --sport 993 -j ACCEPT
+
+#SSH 
+sudo iptables -A INPUT -p tcp -s 10.17.8.1 --dport 22 -i eno1 -j ACCEPT
+sudo iptables -A INPUT -p tcp -s 10.17.8.0/21 --dport 22 -i eno1 -j ACCEPT
+
+#ICMP
+sudo iptables -t filter -A OUTPUT -p icmp --icmp-type echo-reply -j ACCEPT
+
+#TENTATIVAS
+sudo iptables -A INPUT -p tcp --dport 22 --syn -j LOG
+
+sudo iptables -L
