@@ -1,0 +1,24 @@
+Seção 01
+
+Questão 1: A principal diferença entre estes é seu intento, enquanto a Confidencialidade preza pelo garantia de que o
+remetente e o destinatário sejam os únicos a terem acesso a seu conteúdo, e a Integridade enfoca na asseguração da 
+inalteração do conteúdo. Sendo possível ter Confidencialidade sem Integridade, assim como o inverso, já que os envolvidos 
+podem se comunicar e as mesnsagens serem privadas, mas o conteúdo não estar integro.
+
+Questão 2: Reteadores, Cliente e servidor Web.
+
+
+Seção 8.3
+Questão 18: O “man-in-the-middle” é uma forma de ataque em que os dados trocados entre os duas partes, são interceptados, 
+registrados e possivelmente alterados, sem que as vítimas percebem; Não, pois estas permitem o uso de outras ferramentas 
+para impedir coisas do tipo.
+
+
+Seção 8.4
+Questão 21: 
+
+
+Capitulo 8
+Questão 1
+Questão 2
+Questão 3
