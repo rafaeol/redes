@@ -1,0 +1,35 @@
+Segurança em Redes de Computadores
+
+Seção 01
+Questão 1: A principal diferença entre estes é seu intento, enquanto a Confidencialidade preza pelo garantia de que o
+remetente e o destinatário sejam os únicos a terem acesso a seu conteúdo, e a Integridade enfoca na asseguração da 
+inalteração do conteúdo. Sendo possível ter Confidencialidade sem Integridade, assim como o inverso, já que os envolvidos 
+podem se comunicar e as mesnsagens serem privadas, mas o conteúdo não estar integro.
+
+Questão 2: Roteadores, Cliente e servidor Web.
+
+
+Seção 8.3
+Questão 18: O “man-in-the-middle” é uma forma de ataque em que os dados trocados entre as duas partes, são interceptados, 
+registrados e possivelmente alterados, sem que as vítimas percebem; Não, pois estas permitem o uso de outras ferramentas 
+para impedir coisas do tipo.
+
+
+Seção 8.4
+Questão 21: Os nonces são usados nos protocolos de autenticação em uma apresentação SLL para proteger o "ataque de repetição 
+de conexão", isto é, ao enviar diferentes nonces por pedido, mantem-se da integridade de cada transação.
+
+
+Capitulo 8
+Questão 1: 
+1. O usuário poderia ter seu DNS do computador modificado, dando a liberdade ao intruso de controlar o redirecionamento
+de toda navegação de internet para sites escolhidos.
+2. O intruso pode adicionadar várias propagandas em sites, gerando lucro para ele.
+3. Podem ser roubados dados financeiros da vítima (usuário), como senhas de contas bancárias, etc.
+
+Questão 3: O Protocolo de Segurança IP (IPsec) é um protocolo de segurança para camada de rede e é uma combinação de 
+diferentes tecnologias criadas para prover uma segurança melhor.
+
+Questão 4: São uma coleção de agentes de software ou bots infectados, que executam autonomamente 
+e automaticamente tarefas, podendo assim serem acionados remotamente para obedecer ordens (daí vem o termo zumbis da 
+internet), já que facilitam o sobrecarregamento de sistemas, e até a infecção desses.
